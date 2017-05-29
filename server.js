@@ -51,6 +51,13 @@ app.get('/bad', (req, res) => {
   });
 });
 
+//Portfolio page
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageData:'This is my Portfolio page'
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
